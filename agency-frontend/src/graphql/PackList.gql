@@ -1,0 +1,12 @@
+query Query {
+  packs {
+    _id
+    title
+    description
+    price
+    isActive
+    discount
+    country
+    imageUrl
+  }
+}

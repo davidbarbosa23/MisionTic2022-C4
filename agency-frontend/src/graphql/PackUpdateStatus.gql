@@ -1,0 +1,6 @@
+mutation UpdatePackStatus($packId: String!, $isActive: Boolean!) {
+  updatePackStatus(packId: $packId, isActive: $isActive) {
+    _id
+    title
+  }
+}

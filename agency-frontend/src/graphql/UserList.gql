@@ -1,0 +1,12 @@
+query Query {
+  users {
+    id
+    username
+    email
+    first_name
+    last_name
+    is_admin
+    country
+    birth_day
+  }
+}

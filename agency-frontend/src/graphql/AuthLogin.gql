@@ -1,0 +1,7 @@
+mutation Mutation($credentials: CredentialsInput!) {
+  login(credentials: $credentials) {
+    refresh
+    access
+    id
+  }
+}

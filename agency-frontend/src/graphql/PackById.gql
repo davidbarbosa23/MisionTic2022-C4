@@ -1,0 +1,12 @@
+query Pack($packId: String!) {
+  pack(packId: $packId) {
+    _id
+    title
+    description
+    price
+    isActive
+    discount
+    country
+    imageUrl
+  }
+}

@@ -1,0 +1,12 @@
+query Query($userId: Int!) {
+  user(userId: $userId) {
+    id
+    username
+    email
+    first_name
+    last_name
+    is_admin
+    country
+    birth_day
+  }
+}

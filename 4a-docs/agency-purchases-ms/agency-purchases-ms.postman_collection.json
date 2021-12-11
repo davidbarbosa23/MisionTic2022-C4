@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "07b43f7b-b507-4b77-8f32-2a5292206546",
+		"name": "agency-purchases-ms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": 1,\n    \"pack\": \"2\",\n    \"total\": \"5000000.00\",\n    \"buyer_id\": 1,\n    \"buyer_card\": 4111111111111111,\n    \"buyer_card_name\": \"Anita Perez\",\n    \"buyer_card_due_date\": \"2023-10-08\",\n    \"buyer_card_cvv\": 111\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-url}}/purchases/",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"purchases",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-url}}/purchases/list/",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"purchases",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-url}}/purchases/1/",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"purchases",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By User ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-url}}/purchases/list/1/",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"purchases",
+						"list",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api-url",
+			"value": "https://agency-purchases-ms.herokuapp.com"
+		}
+	]
+}

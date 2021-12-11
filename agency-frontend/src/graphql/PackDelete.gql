@@ -1,0 +1,3 @@
+mutation PackDelete($packId: String!) {
+  deletePack(packId: $packId)
+}

@@ -1,0 +1,558 @@
+{
+	"info": {
+		"_postman_id": "4a2aaf20-039d-40be-b0ed-ade40ed0fbd9",
+		"name": "agency-auth-ms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/login/",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/login/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Nov 2021 03:18:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "445"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNzM3ODI5NCwianRpIjoiZGE1ODgwMzg5NjVhNDVlNGI3OWI1YjgyY2ZjZjVmOTAiLCJ1c2VyX2lkIjoxfQ.8B5lXoY3ZyAz3PhwgQac_0cYRQuCFo24WZQMH1-zMWg\",\n    \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM3MjkyNDk0LCJqdGkiOiJmNGQyM2FlMGVmNmM0M2VjOGI2OWMzYWE5YTE4YzU4ZCIsInVzZXJfaWQiOjF9.pyQH2O1hJyOfgxDEneOYWgOOfmuz1ehOvaaydK4K4EU\",\n    \"id\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNzM3ODI5NCwianRpIjoiZGE1ODgwMzg5NjVhNDVlNGI3OWI1YjgyY2ZjZjVmOTAiLCJ1c2VyX2lkIjoxfQ.8B5lXoY3ZyAz3PhwgQac_0cYRQuCFo24WZQMH1-zMWg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/refresh/",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"refresh",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Refresh Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNzM3ODI5NCwianRpIjoiZGE1ODgwMzg5NjVhNDVlNGI3OWI1YjgyY2ZjZjVmOTAiLCJ1c2VyX2lkIjoxfQ.8B5lXoY3ZyAz3PhwgQac_0cYRQuCFo24WZQMH1-zMWg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/refresh/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"refresh",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Nov 2021 03:20:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "218"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM3MjkyNjA1LCJqdGkiOiJlYTFjYzIyMmFlZTM0MTI2OGIyNDc0OTZmMWViYTY1ZiIsInVzZXJfaWQiOjF9.ZRGJ9KbCW_MGu78c6e9uhtW24dqsaYYDtWxitv9-40E\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"johndoe3\",\n    \"password\": \"123456\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api-url}}/register/",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"johndoe3\",\n    \"password\": \"123456\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api-url}}/register/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Nov 2021 03:21:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "445"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNzM3ODQ5MCwianRpIjoiM2RkNjQ4ZDY1Njk1NGY3ZGJjMTEwMDIwYzQ5ZWUxOWYiLCJ1c2VyX2lkIjozfQ.-Y2ZtC9tJvaIygg07E1OeWbig6LTZgbNsdvt2L7j8zM\",\n    \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM3MjkyNjkwLCJqdGkiOiI2YmJjNzhkMTU2MjU0Mzc1OTZlNjNlOWRhNzgyMjM3ZSIsInVzZXJfaWQiOjN9.VUZdtjxr-KGRnv06yymF8JeP-Fmn-C1h59mimyg43sc\",\n    \"id\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/user/",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/user/",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Nov 2021 03:22:28 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "544"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"username\": \"admin\",\n        \"is_admin\": true,\n        \"first_name\": \"\",\n        \"last_name\": \"\",\n        \"email\": \"dev@dev.com\",\n        \"country\": null,\n        \"birth_day\": null,\n        \"created_at\": \"2021-11-10T05:14:59.622588Z\"\n    },\n    {\n        \"id\": 2,\n        \"username\": \"johndoe\",\n        \"is_admin\": false,\n        \"first_name\": \"John\",\n        \"last_name\": \"Doe\",\n        \"email\": \"john@gmail.com\",\n        \"country\": null,\n        \"birth_day\": null,\n        \"created_at\": \"2021-11-12T03:04:37.625032Z\"\n    },\n    {\n        \"id\": 3,\n        \"username\": \"johndoe3\",\n        \"is_admin\": false,\n        \"first_name\": \"John\",\n        \"last_name\": \"Doe\",\n        \"email\": \"john@gmail.com\",\n        \"country\": null,\n        \"birth_day\": null,\n        \"created_at\": \"2021-11-19T03:21:29.843347Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api-url}}/user/1",
+							"host": [
+								"{{api-url}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api-url}}/user/1",
+									"host": [
+										"{{api-url}}"
+									],
+									"path": [
+										"user",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Nov 2021 03:24:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "171"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"username\": \"admin\",\n    \"is_admin\": true,\n    \"first_name\": \"\",\n    \"last_name\": \"\",\n    \"email\": \"dev@dev.com\",\n    \"country\": null,\n    \"birth_day\": null,\n    \"created_at\": \"2021-11-10T05:14:59.622588Z\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api-url",
+			"value": "https://agency-auth-ms.herokuapp.com"
+		},
+		{
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM3MjkyNjA1LCJqdGkiOiJlYTFjYzIyMmFlZTM0MTI2OGIyNDc0OTZmMWViYTY1ZiIsInVzZXJfaWQiOjF9.ZRGJ9KbCW_MGu78c6e9uhtW24dqsaYYDtWxitv9-40E"
+		}
+	]
+}

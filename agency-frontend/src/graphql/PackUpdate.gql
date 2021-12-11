@@ -1,0 +1,6 @@
+mutation UpdatePack($packId: String!, $packInput: PackCreateInput!) {
+  updatePack(packId: $packId, packInput: $packInput) {
+    _id
+    title
+  }
+}

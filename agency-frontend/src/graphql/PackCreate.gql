@@ -1,0 +1,6 @@
+mutation CreatePack($packInput: PackCreateInput!) {
+  createPack(packInput: $packInput) {
+    _id
+    title
+  }
+}

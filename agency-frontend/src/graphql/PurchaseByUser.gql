@@ -1,0 +1,14 @@
+query Purchases($userId: Int!) {
+  purchasesByUser(userId: $userId) {
+    id
+    user
+    pack
+    total
+    buyer_id
+    buyer_card
+    buyer_card_name
+    buyer_card_due_date
+    buyer_card_cvv
+    created_at
+  }
+}
